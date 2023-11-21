@@ -1,0 +1,121 @@
+footer {
+   // /constant css rule
+   li {
+    list-style: none;
+    a {
+      text-decoration-line: none;
+      color: white;
+      cursor: pointer;
+      // transition: margin-left 2s ease 2s;
+      -webkit-transition: margin-left 5s ease; /* WebKit prefix for transition */
+      transition: margin-left 5s ease; /* Standard transition property */
+      &:hover {
+        padding-left: 20px;
+        color:lightgray;
+      }
+    }
+  }
+  background-color: #121231;
+  color: white;
+  .top {
+    // .items
+    padding: 50px 15px 50px;
+    // text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      img {
+        width: 100px;
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        // font-size: 14px;
+        font-family: sans-serif;
+      }
+    }
+  }
+  .bottom {
+    border-top: 0.1px solid lightgray;
+    // font-size: 12px;
+    padding: 20px 50px 20px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .right {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      a:hover {
+        padding-left: 0px;
+        
+      }
+    }
+  }
+
+ 
+  //tablet
+  @media all and (min-width: 480px) {
+    .top {
+      padding: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      flex-direction: row;
+      justify-content:space-between;
+      .items {
+        min-width: 160px;
+        max-width: 200px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &:first-child{
+            min-width: 200px;
+            max-width: 300px;
+        }
+        img {
+          width: 100px;
+        }
+        .links,p {
+          display: flex;
+          flex-direction: column;
+          gap: 17px;
+          // font-size: 14px;
+          font-family: system-ui;
+        }
+      }
+    }
+    .bottom {
+      border-top: 0.1px solid lightgray;
+      // font-size: 12px;
+      padding: 20px 50px 20px 45px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content:space-between;
+      gap: 20px;
+      .right {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    }
+}
+  
+  //desktop
+  @media screen and (min-width: 780px) {
+  }
+  //bigger screen
+  @media screen and (min-width: 1025px) {
+  }
+
+}

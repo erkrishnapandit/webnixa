@@ -1,7 +1,7 @@
-// import "./Ab.scss";
-export default function Ab(){
+// import "./About.scss";
+export default function About(){
 
     return (
-        <div>Ab</div>
+        <div>About</div>
     )
 }
